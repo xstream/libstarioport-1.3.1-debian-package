@@ -1,0 +1,5 @@
+libstarioport (1.3.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Mikhail Yatsenko <mikhail.yatsenko@gmail.com>  Mon, 10 Apr 2017 21:24:59 +0300

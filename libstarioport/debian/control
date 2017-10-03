@@ -1,0 +1,40 @@
+Source: libstarioport
+Priority: optional
+Maintainer: Mikhail Yatsenko <mikhail.yatsenko@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Section: libs
+Homepage: http://www.starmicronics.com/support/TechnologyCategoryDetail.aspx?id=39
+#Vcs-Git: git://anonscm.debian.org/collab-maint/libstarioport.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libstarioport.git
+
+Package: libstarioport-dev
+Section: libdevel
+Architecture: any
+Depends: libstarioport (= ${binary:Version}), ${misc:Depends}
+Description: Star printer programming library development files
+ Library for programming Star printer applications without the knowledge
+ of Linux kernel internals.
+ .
+ This package contains what you need for compiling sources that
+ use this library in your own code.
+
+Package: libstarioport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Star printer programming library
+ Library for programming Star printer applications without the knowledge
+ of Linux kernel internals.
+ .
+ This package contains what you need to run programs that use this
+ library.
+
+Package: libstarusb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: userspace USB programming library
+ Library for programming USB applications without the knowledge
+ of Linux kernel internals.
+ .
+ This package contains what you need to run programs that use this
+ library.

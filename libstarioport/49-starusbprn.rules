@@ -1,0 +1,9 @@
+# udev rules file for star usb devices
+# you MUST insert your own user name into the OWNER field in the below statements
+# ADJUST PRIVELEDGES AS REQUIRED TO ESTABLISH YOUR OWN SECURE ENVIRONMENT
+
+SYSFS{idVendor}=="0519", SYSFS{idProduct}=="0001", OWNER="star", GROUP="star", MODE="0660"
+SYSFS{idVendor}=="0519", SYSFS{idProduct}=="0002", OWNER="star", GROUP="star", MODE="0660"
+SYSFS{idVendor}=="0519", SYSFS{idProduct}=="0003", OWNER="star", GROUP="star", MODE="0660"
+SYSFS{idVendor}=="0519", SYSFS{idProduct}=="0004", OWNER="star", GROUP="star", MODE="0660"
+SYSFS{idVendor}=="0519", SYSFS{idProduct}=="000e", OWNER="star", GROUP="star", MODE="0660"
